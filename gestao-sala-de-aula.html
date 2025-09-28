@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão da Sala de Aula e do Ensino - Guia Prático</title>
-    <!-- O mesmo CSS das outras páginas -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        body{font-family:'Roboto',sans-serif;background-color:#f4f4f4;margin:0;padding:20px;color:#333}.container{max-width:900px;margin:auto;background-color:#fff;padding:30px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1)}header{border-bottom:2px solid #00843D;padding-bottom:20px;margin-bottom:30px}header h1{color:#00843D;margin:0;font-size:1.8em}header .breadcrumb{font-size:.9em;color:#777}header .breadcrumb a{color:#00843D;text-decoration:none}.topic-accordion details{background-color:#f9f9f9;border:1px solid #ddd;border-radius:5px;margin-bottom:15px}.topic-accordion summary{font-size:1.2em;font-weight:700;color:#006A31;padding:15px;cursor:pointer;outline:none}.topic-content{padding:0 20px 20px;line-height:1.7}.topic-content h4{color:#333;border-left:3px solid #00843D;padding-left:10px;margin-top:25px}.toolbox{background-color:#eef7ee;border:1px solid #b8d8be;border-radius:5px;padding:15px;margin-top:20px}.toolbox ul{list-style-type:none;padding:0}.toolbox li{margin-bottom:10px}.toolbox a{color:#00843D;font-weight:700;text-decoration:none}.toolbox a:hover{text-decoration:underline}footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #ddd;font-size:.9em;color:#888}
-    </style>
+    <!-- O mesmo CSS de antes -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -20,19 +19,37 @@
         </header>
 
         <div class="topic-accordion">
-
             <!-- Tópico 1: Ausências e Reposições -->
             <details>
                 <summary>Ausências e Reposições de Aula</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>A ausência, seja por motivo pessoal emergencial ou por missão institucional, não pode significar a ausência do serviço educacional. O compromisso ético e profissional do servidor é garantir a continuidade das atividades de ensino através do planejamento, da colaboração com os pares e da comunicação formal com a coordenação, conforme os fluxos estabelecidos.</p>
+                    <h4>O que é?</h4>
+                    <p>Procedimento para garantir a continuidade das atividades de ensino quando um docente precisa se
+                        ausentar por motivos pessoais ou missão institucional.</p>
+                    <h4>Para quem?</h4>
+                    <p>Docentes de todos os cursos.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>Tentar a troca de aula com um colega.</li>
+                        <li>Caso não seja possível, solicitar auxílio à Coordenação de Curso.</li>
+                        <li>Formalizar a solução (troca ou outra) por e-mail, com ciência das Direções.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>Comunicar a ausência com a máxima antecedência possível. O cancelamento de aulas é a última opção
+                        e deve ser evitado.</p>
+
                     <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Normativa de Referência:</strong> <a href="http://www.planalto.gov.br/ccivil_03/decreto/d1171.htm" target="_blank">Código de Ética (Dever de Eficiência e Zelo)</a></li>
-                            <li><strong>Processo SEI de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 5)</a></li>
-                            <li><strong>Modelos:</strong> <a href="modelo-email-troca.html">[HTML] Modelo de E-mail para Troca de Aula</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a
+                                    href="http://www.planalto.gov.br/ccivil_03/decreto/d1171.htm" target="_blank">Código
+                                    de Ética (Dever de Eficiência e Zelo)</a></li>
+                            <li>🗂️ <strong>Processo SEI:</strong> <a
+                                    href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P"
+                                    target="_blank">SEI nº 23411.007482/2025-59 (Item 5)</a></li>
+                            <li>✉️ <strong>Modelo:</strong> <a href="modelo-email-troca.html">[HTML] Modelo de E-mail
+                                    para Troca de Aula</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> Coordenação do seu curso.</li>
                         </ul>
                     </div>
                 </div>
@@ -42,74 +59,126 @@
             <details>
                 <summary>Registro de Frequência</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O registro de frequência é um ato administrativo obrigatório e uma ferramenta pedagógica essencial. Ele documenta a assiduidade do estudante, serve como base para o combate à evasão e garante a transparência do processo educacional junto aos pais e à instituição. O registro deve ser feito a cada aula, de forma fidedigna e no sistema acadêmico oficial.</p>
+                    <h4>O que é?</h4>
+                    <p>Ato administrativo obrigatório que documenta a assiduidade do estudante, servindo como ferramenta pedagógica para o combate à evasão e para a comunicação com a família.</p>
+                    <h4>Para quem?</h4>
+                    <p>Docentes de todos os cursos.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>Acessar o sistema acadêmico oficial (SUAP) a cada aula.</li>
+                        <li>Realizar a chamada nominal e registrar as presenças e faltas.</li>
+                        <li>Em eventos externos com lista de presença, a frequência deve ser posteriormente lançada no diário da disciplina correspondente.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>O registro deve ser feito de forma fidedigna e preferencialmente no dia da aula para manter a integridade dos dados. A falta de registro implica em responsabilidade administrativa.</p>
                     <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Normativa de Referência:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm" target="_blank">Lei de Diretrizes e Bases da Educação (LDB)</a></li>
-                            <li><strong>Processo SEI de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 4 - Registro em eventos)</a></li>
-                            <li><strong>Documento:</strong> <a href="https://ifpr.edu.br/tutoriais/base-conhecimento/01-lancamento-de-conceitos-e-frequencias-cursos-anuais-e-semestrais-2/">Manual do Sistema Unificado de Administração Pública (SUAP/IFPR)</a></li>
+                            <li>💻 <strong>Sistema Oficial:</strong> <a href="https://suap.ifpr.edu.br/" target="_blank">Acesso ao SUAP</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/l9394.htm" target="_blank">Lei de Diretrizes e Bases da Educação (LDB)</a></li>
+                            <li>🗂️ <strong>Processo SEI:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 4)</a></li>
+                            <li>📖 <strong>Documento:</strong> <a href="https://ifpr.edu.br/tutoriais/base-conhecimento/01-lancamento-de-conceitos-e-frequencias-cursos-anuais-e-semestrais-2/" target="_blank">Manual do Diário Online no SUAP</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> Secretaria Acadêmica (SECAC).</li>
                         </ul>
                     </div>
                 </div>
             </details>
 
-            <!-- Tópico 3: Anotação de Ocorrências -->
+             <!-- Tópico 3: Anotação de Ocorrências -->
             <details>
                 <summary>Anotação de Ocorrências</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O registro de ocorrências (atrasos, comportamentos inadequados, etc.) é uma ferramenta de comunicação formal entre o docente, a SEPAE, a coordenação e a família. Deve ser realizado de maneira objetiva e factual, evitando juízos de valor. Manter esse registro atualizado é fundamental para o acompanhamento pedagógico e para eventuais ações disciplinares.</p>
-                    <div class="toolbox">
-                        <h4>Caixa de Ferramentas</h4>
-                        <ul>
-                            <li><strong>Normativa de Referência:</strong> <a href="#">Regulamento Disciplinar do Corpo Discente do IFPR</a></li>
-                            <li><strong>Processo SEI de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 14)</a></li>
-                            <li><strong>Sistema:</strong> <a href="https://sge.assis.ifpr.edu.br/">Acesso ao Sistema de Gestão Escolar (SGE) para registros</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-            
-            <!-- Tópico 4: Uso de Uniforme e Atrasos -->
-            <details>
-                <summary>Uso de Uniforme e Atrasos de Alunos</summary>
-                <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O cumprimento de regras como o uso de uniforme e a pontualidade são parte da formação cidadã. A tarefa de orientar e cobrar o cumprimento é compartilhada por toda a comunidade acadêmica. A abordagem inicial do docente deve ser sempre pedagógica, seguida do encaminhamento à SEPAE para registro e contato com os responsáveis, conforme o fluxo definido.</p>
+                    <h4>O que é?</h4>
+                    <p>Ferramenta de comunicação formal para registrar eventos que fogem à normalidade da sala de aula (atrasos, conversas excessivas, uso de celular, etc.), servindo de subsídio para o acompanhamento pedagógico e familiar.</p>
+                    <h4>Para quem?</h4>
+                    <p>Docentes, SEPAE e Coordenações de Curso.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>Docente acessa o Sistema de Gestão Escolar (SGE).</li>
+                        <li>Descreve a ocorrência de forma objetiva e factual, sem juízo de valor.</li>
+                        <li>O registro fica disponível para consulta da equipe pedagógica, que dará os encaminhamentos necessários.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>O SGE é para registros que exigem ações imediatas. Para registros acadêmicos e administrativos mais complexos, utiliza-se o SUAP. O registro deve ser feito o mais próximo possível do evento.</p>
                      <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Processo SEI de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 1 - Atrasos; Item 2 - Uniforme)</a></li>
-                            <li><strong>Documento:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5RsXoOD7NHrxnmb-iXAMPK0JS2qzQ7yEFyrQtt_wLUuX4RsV3qw-IwWZ8uMc7izzVmS8iAlXQ0wXkplidHz3nSj">Normas de Conduta e Convivência do Campus</a></li>
+                            <li>💻 <strong>Sistema Oficial:</strong> <a href="https://sge.assis.ifpr.edu.br/" target="_blank">Acesso ao SGE para registros</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://ifpr.edu.br/assis-chateaubriand/menu-academico/area-do-estudante/regulamento-disciplinar/" target="_blank">Regulamento Disciplinar do Campus</a></li>
+                            <li>🗂️ <strong>Processo SEI:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 14)</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> SEPAE.</li>
                         </ul>
                     </div>
                 </div>
             </details>
-            
+
+            <!-- Tópico 4: Uso de Uniforme e Atrasos de Alunos -->
+            <details>
+                <summary>Uso de Uniforme e Atrasos de Alunos</summary>
+                <div class="topic-content">
+                    <h4>O que é?</h4>
+                    <p>Procedimento para orientar os estudantes sobre a importância do cumprimento das normas de pontualidade e apresentação (uniforme), que são parte da formação cidadã e da organização do ambiente escolar.</p>
+                    <h4>Para quem?</h4>
+                    <p>Toda a comunidade acadêmica (docentes, técnicos, gestão).</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>**Atraso:** O aluno terá o atraso registrado pela SEPAE e entrará na aula seguinte à sua chegada. O docente pode registrar a ocorrência no SGE.</li>
+                        <li>**Falta de Uniforme:** O docente orienta o aluno e o encaminha à SEPAE para justificar e registrar. Após três ocorrências, os responsáveis são chamados.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>A responsabilidade pela cobrança e orientação é de todos os servidores. A abordagem deve ser sempre educativa, e o encaminhamento à SEPAE garante a padronização do tratamento.</p>
+                     <div class="toolbox">
+                        <h4>Caixa de Ferramentas</h4>
+                        <ul>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://ifpr.edu.br/assis-chateaubriand/menu-academico/area-do-estudante/regulamento-disciplinar/" target="_blank">Regulamento Disciplinar do Campus</a></li>
+                            <li>🗂️ <strong>Processo SEI:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 1 - Atrasos; Item 2 - Uniforme)</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> SEPAE.</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
              <!-- Tópico 5: Uso de Celulares em Aula -->
             <details>
                 <summary>Uso de Celulares em Aula</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O uso de celulares e dispositivos eletrônicos é vedado para fins não pedagógicos. O docente é a autoridade em sala de aula para gerenciar essa regra, permitindo o uso quando for uma ferramenta didática e coibindo quando for uma distração. Em caso de descumprimento, o aluno deve ser orientado verbalmente e, em caso de reincidência, encaminhado à SEPAE, conforme a Instrução Normativa vigente.</p>
+                    <h4>O que é?</h4>
+                    <p>Diretrizes para o gerenciamento do uso de celulares e dispositivos eletrônicos em sala de aula, equilibrando o potencial pedagógico da tecnologia com a necessidade de manter o foco e o respeito no ambiente de aprendizagem.</p>
+                    <h4>Para quem?</h4>
+                    <p>Docentes e discentes.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>A regra geral é a proibição do uso para fins não pedagógicos. O aparelho deve permanecer guardado e em modo silencioso.</li>
+                        <li>O docente pode autorizar o uso como ferramenta de ensino, de forma planejada e supervisionada.</li>
+                        <li>Em caso de descumprimento, o docente orienta verbalmente o aluno.</li>
+                        <li>Em caso de reincidência, encaminha o aluno à SEPAE para orientação e registro de ocorrência.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>A autoridade para gerenciar o uso em sala é do docente. A escalada para a SEPAE deve ocorrer em casos de desobediência ou comportamento recorrente.</p>
                      <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Normativa de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5TBO1QNIPGA3FlYTCFeqzpivJCA1Zj0u-SeVSZ9z0q1OQrQl9ppbFiRrcBppuJb383VBMR8HDxq6Ungwp7PAUvK">Instrução Normativa PROENS/IFPR Nº 1/2025</a></li>
-                            <li><strong>Processo SEI de Referência:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 12)</a></li>
-                            <li><strong>Documento:</strong> <a href="fluxograma-disciplinar.html">[HTML] Fluxograma de Ação em Caso de Descumprimento</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5TBO1QNIPGA3FlYTCFeqzpivJCA1Zj0u-SeVSZ9z0q1OQrQl9ppbFiRrcBppuJb383VBMR8HDxq6Ungwp7PAUvK" target="_blank">Instrução Normativa PROENS/IFPR Nº 1/2025</a></li>
+                            <li>🗂️ <strong>Processo SEI:</strong> <a href="https://sei.ifpr.edu.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQ2tExjNXdyD3S2TR6ekTMBP47SJFpu24plVQ6vyIAT4P" target="_blank">SEI nº 23411.007482/2025-59 (Item 12)</a></li>
+                            <li>🗺️ <strong>Fluxograma:</strong> <a href="fluxograma-disciplinar.html">[HTML] Fluxograma de Ação Disciplinar</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> Docente (em sala), SEPAE (em caso de reincidência).</li>
                         </ul>
                     </div>
                 </div>
             </details>
-            
+
         </div>
+
+        <!-- NAVEGAÇÃO ADICIONADA -->
+        <nav class="page-nav">
+            <a href="index.html">← Voltar ao Início</a>
+            <a href="processos-academicos.html">Próximo Guia: Processos Acadêmicos →</a>
+        </nav>
 
         <footer>
             Coordenação de Ensino - IFPR Campus Assis Chateaubriand
         </footer>
     </div>
 </body>
+
 </html>

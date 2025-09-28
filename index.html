@@ -1,162 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Prático do Servidor - COENS</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    <!-- O mesmo CSS de antes -->
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #00843D; /* Verde IFPR */
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        header h1 {
-            color: #00843D;
-            margin: 0;
-        }
-
-        header h2 {
-            color: #555;
-            font-weight: 400;
-            font-size: 1.2em;
-            margin-top: 5px;
-        }
-
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .category-card {
-            background-color: #f9f9f9;
-            border-left: 5px solid #00843D;
-            padding: 25px;
-            border-radius: 5px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .category-card h3 {
-            margin-top: 0;
-            color: #006A31; /* Verde Escuro */
-        }
-
-        .category-card ul {
-            padding-left: 20px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .category-card a.button {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #00843D;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-        }
-
-        .category-card a.button:hover {
-            background-color: #006A31;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
-            color: #888;
-        }
-
-    </style>
 </head>
-<body>
 
+<body>
     <div class="container">
         <header>
             <h1>Guia Prático do Servidor na COENS/ASSIS/IFPR</h1>
             <h2>Pílulas: Bom Servir no Coletivo</h2>
         </header>
 
+        <!-- SEÇÃO INTRODUTÓRIA ADICIONADA -->
+        <div class="intro-text">
+            <p>Este guia funciona como nossa <strong>Carta de Serviços ao Usuário (Docente, Técnico, Estudante e/ou
+                    Responsáveis Legais)</strong>, um compromisso com a transparência e a eficiência. Aqui você encontra
+                os fluxos, normativas e modelos para orientar sua atuação, sempre em linha com <a
+                    href="nosso-compromisso.html">Nosso Compromisso com o Usuário do Serviço Público Federal</a>.</p>
+        </div>
+
         <div class="category-grid">
-            <!-- Categoria 1 -->
+            <!-- Os cards das categorias permanecem os mesmos -->
+
+            <div class="category-card">
+                <h3>Planejamento Acadêmico e Horário</h3>
+                <ul>
+                    <li>Atribuição de Disciplinas</li>
+                    <li>Cadastro de Restrições</li>
+                    <li>Recursos e Prazos</li>
+                    <li>Consulta ao Edital Vigente</li>
+                </ul>
+                <a href="planejamento-academico.html" class="button">Acessar Guia</a>
+            </div>
             <div class="category-card">
                 <h3>Gestão da Sala de Aula e do Ensino</h3>
                 <ul>
                     <li>Ausências e reposições</li>
                     <li>Registro de frequência</li>
-                    <li>Anotação de ocorrências</li>
                     <li>Uso de uniforme e atrasos</li>
-                    <li>Uso de celulares em aula</li>
                 </ul>
                 <a href="gestao-sala-de-aula.html" class="button">Acessar Guia</a>
             </div>
-
-            <!-- Categoria 2 -->
             <div class="category-card">
                 <h3>Processos Acadêmicos e Discentes</h3>
                 <ul>
                     <li>Aplicação de avaliações</li>
                     <li>Sanções disciplinares</li>
                     <li>Guarda religiosa</li>
-                    <li>Conselho de classe</li>
                 </ul>
                 <a href="processos-academicos.html" class="button">Acessar Guia</a>
             </div>
-
-            <!-- Categoria 3 -->
             <div class="category-card">
                 <h3>Vida Funcional e Administrativa</h3>
                 <ul>
                     <li>Solicitação de diárias e passagens</li>
-                    <li>Missão e Eventos sem diárias e passagens</li>
-                    <li>Afastamentos para capacitação</li>
-                    <li>Comunicação com a chefia</li>
+                    <li>Missão ou Eventos sem diárias (Com afastamento da sede)</li>
+                    <li>Missão ou Eventos (Sem afastamento da sede)</li>
                     <li>Uso de bens públicos</li>
                 </ul>
                 <a href="vida-funcional.html" class="button">Acessar Guia</a>
             </div>
-
-            <!-- Categoria 4 -->
             <div class="category-card">
                 <h3>Ética, Conduta e Convivência</h3>
                 <ul>
                     <li>Postura em redes sociais</li>
                     <li>Gestão de conflitos</li>
-                    <li>Recebimento de presentes</li>
                     <li>Canais de denúncia (assédio)</li>
                 </ul>
                 <a href="etica-conduta.html" class="button">Acessar Guia</a>
+            </div>
+            <div class="category-card">
+                <h3>Carta de Serviços do Requerente para COENS/ASSIS</h3>
+                <ul>
+                    <li>Avaliação de Estágio Probatório (Docente e TAE)</li>
+                    <li>Progressão por Mérito (TAE)</li>
+                    <li>Licença para Capacitação</li>
+                    <li>Afastamento para Pós-Graduação (Stricto Sensu / Pós-Doc)</li>
+                    <li>Acompanhamento de Frequência (de servidores)</li>
+                    <li>Horário Especial de Servidor Estudante</li>
+                    <li>Programa de Gestão (Teletrabalho)</li>
+                    <li>Designação / Dispensa de Função</li>
+                </ul>
+                <a href="carta-de-servicos.html" class="button">Acessar Guia</a>
             </div>
         </div>
 
@@ -164,6 +95,6 @@
             Coordenação de Ensino - IFPR Campus Assis Chateaubriand
         </footer>
     </div>
-
 </body>
+
 </html>

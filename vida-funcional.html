@@ -1,119 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida Funcional e Administrativa - Guia Prático</title>
-    <!-- O mesmo CSS da página de "Gestão da Sala de Aula" vai aqui -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            color: #333
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-        }
-
-        header {
-            border-bottom: 2px solid #00843D;
-            padding-bottom: 20px;
-            margin-bottom: 30px
-        }
-
-        header h1 {
-            color: #00843D;
-            margin: 0;
-            font-size: 1.8em
-        }
-
-        header .breadcrumb {
-            font-size: .9em;
-            color: #777
-        }
-
-        header .breadcrumb a {
-            color: #00843D;
-            text-decoration: none
-        }
-
-        .topic-accordion details {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 15px
-        }
-
-        .topic-accordion summary {
-            font-size: 1.2em;
-            font-weight: 700;
-            color: #006A31;
-            padding: 15px;
-            cursor: pointer;
-            outline: none
-        }
-
-        .topic-content {
-            padding: 0 20px 20px;
-            line-height: 1.7
-        }
-
-        .topic-content h4 {
-            color: #333;
-            border-left: 3px solid #00843D;
-            padding-left: 10px;
-            margin-top: 25px
-        }
-
-        .toolbox {
-            background-color: #eef7ee;
-            border: 1px solid #b8d8be;
-            border-radius: 5px;
-            padding: 15px;
-            margin-top: 20px
-        }
-
-        .toolbox ul {
-            list-style-type: none;
-            padding: 0
-        }
-
-        .toolbox li {
-            margin-bottom: 10px
-        }
-
-        .toolbox a {
-            color: #00843D;
-            font-weight: 700;
-            text-decoration: none
-        }
-
-        .toolbox a:hover {
-            text-decoration: underline
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: .9em;
-            color: #888
-        }
-    </style>
+    <!-- O mesmo CSS de antes -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -124,29 +17,32 @@
         </header>
 
         <div class="topic-accordion">
+
             <!-- Tópico 1: Diárias e Passagens -->
             <details>
                 <summary>Solicitação de Diárias e Passagens para Eventos</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O deslocamento em missão é um ato administrativo que exige planejamento e estrito cumprimento das
-                        normas. As solicitações devem ser feitas com a máxima antecedência possível, por meio do sistema
-                        oficial (SCDP), garantindo a devida autorização e a correta aplicação dos recursos públicos.
-                        Lembre-se que o planejamento da reposição de aulas é parte integrante do processo.</p>
+                    <h4>O que é?</h4>
+                    <p>Procedimento administrativo para solicitar o custeio de diárias (alimentação, hospedagem) e passagens para servidores em deslocamento a serviço da instituição (missão, evento, capacitação).</p>
+                    <h4>Para quem?</h4>
+                    <p>Servidores (docentes e TAEs) designados para missões oficiais fora da sede.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>Realizar o planejamento prévio da missão e da reposição de atividades (se aplicável).</li>
+                        <li>Acessar o Sistema de Concessão de Diárias e Passagens (SCDP) para iniciar a solicitação.</li>
+                        <li>Preencher todos os dados da viagem e anexar a documentação comprobatória (convite, programação, etc.).</li>
+                        <li>Submeter a solicitação para aprovação da chefia imediata e demais instâncias.</li>
+                        <li>Após a viagem, realizar a prestação de contas no sistema, anexando os comprovantes (canhotos de embarque, certificados).</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>As solicitações devem ser feitas com a máxima antecedência (mínimo de 15 dias é recomendado) para garantir a compra de passagens e a liberação dos recursos. A prestação de contas deve ocorrer em até 5 dias após o retorno.</p>
                     <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Sistema Oficial:</strong> <a href="#" target="_blank">Acesso ao SCDP (Sistema de
-                                    Concessão de Diárias e Passagens)</a></li>
-                            <li><strong>Normativa de Referência:</strong> <a
-                                    href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5992.htm"
-                                    target="_blank">Decreto nº 5.992/2006</a></li>
-                            <li><strong>Modelos:</strong> <a
-                                    href="https://ifpr.edu.br/assis-chateaubriand/menu-institucional/direcao-administrativa/diarias-e-passagens/">[HTML]
-                                    Checklist para Solicitação de Viagem</a></li>
-                            <li><strong>Modelos:</strong> <a
-                                    href="https://ifpr.edu.br/assis-chateaubriand/menu-institucional/direcao-administrativa/diarias-e-passagens/">[HTML]
-                                    Modelo de Relatório de Viagem para Prestação de Contas</a></li>
+                            <li>💻 <strong>Sistema Oficial:</strong> <a href="#" target="_blank">Acesso ao SCDP</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5992.htm" target="_blank">Decreto nº 5.992/2006</a></li>
+                            <li>📋 <strong>Modelos:</strong> <a href="https://ifpr.edu.br/assis-chateaubriand/menu-institucional/direcao-administrativa/diarias-e-passagens/" target="_blank">[HTML] Checklist e Relatório de Viagem</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> Direção de Planejamento e Administração.</li>
                         </ul>
                     </div>
                 </div>
@@ -154,20 +50,49 @@
 
             <!-- Tópico 2: Missão sem Diárias e Passagens -->
             <details>
-                <summary>Missão/ Eventos sem Diárias e Passagens</summary>
+                <summary>Missão/Eventos sem Diárias e Passagens (Com afastamento da sede)</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>Mesmo que a missão não gere custos para o IFPR (viagem custeada por outra instituição ou
-                        voluntária), a formalização do afastamento via processo SEI e a publicação de uma
-                        <strong>Portaria</strong> são obrigatórias. Este procedimento garante o amparo legal ao servidor
-                        em caso de acidentes e serve como registro funcional para a carreira.</p>
+                    <h4>O que é?</h4>
+                    <p>Formalização obrigatória do afastamento de um servidor para missão institucional, mesmo quando não há custos de diárias ou passagens para o IFPR. Garante o amparo legal ao servidor e o registro funcional da atividade.</p>
+                    <h4>Para quem?</h4>
+                    <p>Servidores que participarão de eventos custeados por outra instituição ou de forma voluntária, com anuência da chefia.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <ol>
+                        <li>Planejar a reposição de atividades e obter o "de acordo" da chefia imediata.</li>
+                        <li>Abrir processo no SEI solicitando o afastamento sem ônus.</li>
+                        <li>Anexar formulário de solicitação, comprovação do evento e plano de reposição.</li>
+                        <li>Aguardar a publicação da Portaria de Afastamento antes de iniciar a viagem.</li>
+                    </ol>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>O processo deve ser aberto com antecedência para permitir a tramitação e publicação da portaria a tempo. Viajar sem a portaria publicada pode ser considerado ausência não justificada.</p>
                     <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Guia Completo:</strong> <a href="missao-sem-diarias.html">Orientações para
-                                    Missão sem Concessão de Diárias e Passagens</a></li>
-                            <li><strong>Modelos:</strong> <a href="#">[FORM] Formulário de Solicitação de Afastamento no
-                                    País</a></li>
+                             <li>📜 <strong>Normativa:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm" target="_blank">Lei 8.112/90 (Art. 95 e 96)</a></li>
+                             <li>📋 <strong>Guia Completo:</strong> <a href="missao-sem-diarias.html">Orientações para Missão sem Concessão de Diárias</a></li>
+                             <li>👤 <strong>Contato Responsável:</strong> Chefia Imediata (para início do processo).</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Tópico Novo: Eventos Locais / Online -->
+            <details>
+                <summary>Participação em Eventos Locais / Online (sem afastamento da sede)</summary>
+                <div class="topic-content">
+                    <h4>O que é?</h4>
+                    <p>Formalização da participação do servidor em eventos (online ou na própria cidade) que ocorrem durante a jornada de trabalho, mas que não caracterizam missão ou afastamento da sede e não geram custos para o IFPR.</p>
+                    <h4>Para quem?</h4>
+                    <p>Servidores que desejam participar de ações de capacitação durante o horário de expediente.</p>
+                    <h4>Passo a Passo (Fluxo)</h4>
+                    <p>O processo é simplificado e envolve a abertura de um processo SEI para registro, com a ciência e anuência da chefia imediata, para justificar a ausência das atividades rotineiras. <a href="evento-local-sem-custo.html">Consulte o guia completo para mais detalhes.</a></p>
+                    
+                    <div class="toolbox">
+                        <h4>Caixa de Ferramentas</h4>
+                        <ul>
+                             <li>📜 <strong>Normativa:</strong> <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Decreto/D9991.htm" target="_blank">Decreto nº 9.991/2019</a></li>
+                             <li>📋 <strong>Guia Completo:</strong> <a href="evento-local-sem-custo.html">Orientações para Participação em Eventos Locais/Online</a></li>
+                             <li>👤 <strong>Contato Responsável:</strong> Chefia Imediata (COENS).</li>
                         </ul>
                     </div>
                 </div>
@@ -177,32 +102,40 @@
             <details>
                 <summary>Uso de Bens Públicos</summary>
                 <div class="topic-content">
-                    <h4>Resumo da Pílula</h4>
-                    <p>O patrimônio público (computadores, internet, materiais de escritório, etc.) destina-se
-                        exclusivamente ao serviço. Utilizá-lo para fins particulares é uma infração ética e funcional. O
-                        zelo com os equipamentos e a economia de recursos são deveres de todo servidor, refletindo o
-                        respeito com o dinheiro do contribuinte.</p>
+                    <h4>O que é?</h4>
+                    <p>Conjunto de deveres e vedações sobre a correta utilização do patrimônio público (equipamentos, materiais, sistemas, internet) disponibilizado para o exercício da função.</p>
+                    <h4>Para quem?</h4>
+                    <p>Todos os servidores (docentes e TAEs).</p>
+                    <h4>Princípios Básicos</h4>
+                    <ul>
+                        <li><strong>Finalidade Pública:</strong> Os bens devem ser usados exclusivamente para o serviço.</li>
+                        <li><strong>Zelo e Conservação:</strong> É dever do servidor cuidar dos equipamentos e materiais, comunicando qualquer dano ou necessidade de manutenção.</li>
+                        <li><strong>Economicidade:</strong> Utilizar os recursos (impressões, energia, etc.) de forma racional, evitando desperdícios.</li>
+                    </ul>
+                    <h4>Prazos e Pontos de Atenção</h4>
+                    <p>O uso indevido de bens públicos pode configurar infração ética e disciplinar, passível de apuração. A segurança da informação (uso de senhas, e-mail institucional) é parte essencial deste dever.</p>
                     <div class="toolbox">
                         <h4>Caixa de Ferramentas</h4>
                         <ul>
-                            <li><strong>Normativa de Referência:</strong> <a
-                                    href="http://www.planalto.gov.br/ccivil_03/decreto/d1171.htm" target="_blank">Código
-                                    de Ética (Inciso IX)</a></li>
-                            <li><strong>Normativa de Referência:</strong> <a
-                                    href="https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm" target="_blank">Lei
-                                    8.112/90 (Dever de zelar pelo patrimônio)</a></li>
-                            <li><strong>Documento:</strong> <a
-                                    href="https://ifpr.edu.br/wp-content/uploads/2012/07/Politica.pdf">Política de
-                                    Segurança da Informação do IFPR</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="http://www.planalto.gov.br/ccivil_03/decreto/d1171.htm" target="_blank">Código de Ética (Inciso IX)</a></li>
+                            <li>📜 <strong>Normativa:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm" target="_blank">Lei 8.112/90 (Dever de zelar pelo patrimônio)</a></li>
+                            <li>📖 <strong>Documento:</strong> <a href="https://ifpr.edu.br/wp-content/uploads/2012/07/Politica.pdf" target="_blank">Política de Segurança da Informação do IFPR</a></li>
+                            <li>👤 <strong>Contato Responsável:</strong> Setor de Patrimônio / TI (para questões específicas).</li>
                         </ul>
                     </div>
                 </div>
             </details>
             
-
         </div>
-        <footer>Coordenação de Ensino - IFPR Campus Assis Chateaubriand</footer>
+
+        <nav class="page-nav">
+            <a href="processos-academicos.html">← Guia Anterior: Processos Acadêmicos</a>
+            <a href="etica-conduta.html">Próximo Guia: Ética e Conduta →</a>
+        </nav>
+
+        <footer>
+            Coordenação de Ensino - IFPR Campus Assis Chateaubriand
+        </footer>
     </div>
 </body>
-
 </html>
