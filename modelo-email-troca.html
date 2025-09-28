@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de E-mail para Troca de Aula - Guia Prático</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 2px solid #00843D;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            color: #00843D;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        header .breadcrumb {
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        header .breadcrumb a {
+            color: #00843D;
+            text-decoration: none;
+        }
+
+        .template-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .template-header {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .template-header h3 {
+            margin: 0;
+            color: #006A31;
+        }
+        
+        .template-content {
+            padding: 20px;
+            background-color: #fff;
+            white-space: pre-wrap; /* Mantém a formatação do texto */
+            line-height: 1.6;
+            font-family: 'Courier New', Courier, monospace;
+            color: #444;
+        }
+        
+        .instructions {
+            padding: 0 20px;
+            font-size: 0.95em;
+            color: #666;
+        }
+        
+        .copy-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto 10px auto;
+            padding: 12px 20px;
+            background-color: #00843D;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-button:hover {
+            background-color: #006A31;
+            transform: scale(1.05);
+        }
+        
+        .copy-button.copied {
+            background-color: #28a745;
+            transform: scale(1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="gestao-sala-de-aula.html">Gestão da Sala de Aula</a> > Modelos
+            </div>
+            <h1>Modelo de E-mail: Troca de Aula</h1>
+        </header>
+        
+        <p class="instructions">
+            Utilize este modelo para solicitar formalmente a troca de aula com um colega. Preencha os campos entre <strong>[colchetes]</strong> e clique no botão abaixo para copiar todo o conteúdo para a sua área de transferência.
+        </p>
+
+        <div class="template-box">
+            <div class="template-header">
+                <h3>Modelo de E-mail</h3>
+            </div>
+            <div id="emailTemplate" class="template-content">
+Assunto: Solicitação de Troca de Aula - [Sua Disciplina]
+
+Prezado(a) colega [Nome do Colega],
+
+Espero que este e-mail o encontre bem.
+
+Escrevo para verificar a sua disponibilidade para uma possível troca de aulas. Terei um compromisso inadiável e não poderei ministrar minha aula de [Nome da Disciplina] para a turma [Código da Turma], na próxima [Dia da Semana], [Data], no horário das [Horário da sua aula].
+
+Gostaria de saber se você poderia assumir este horário para mim. Em contrapartida, fico à sua inteira disposição para assumir uma de suas aulas em data e horário que lhe sejam convenientes.
+
+Caso tenha disponibilidade, podemos alinhar os detalhes e comunicar a Coordenação do Curso para a devida formalização.
+
+Agradeço imensamente sua atenção e colaboração.
+
+Atenciosamente,
+
+[Seu Nome Completo]
+Professor(a) de [Sua Área/Disciplina]
+IFPR - Campus Assis Chateaubriand
+            </div>
+        </div>
+
+        <button id="copyBtn" class="copy-button">Copiar Modelo</button>
+
+        <footer>
+            Coordenação de Ensino - IFPR Campus Assis Chateaubriand
+        </footer>
+    </div>
+
+    <script>
+        const copyBtn = document.getElementById('copyBtn');
+        const emailTemplate = document.getElementById('emailTemplate');
+
+        copyBtn.addEventListener('click', () => {
+            // navigator.clipboard.writeText é a forma moderna e segura
+            navigator.clipboard.writeText(emailTemplate.innerText).then(() => {
+                // Feedback visual para o usuário
+                copyBtn.innerText = 'Copiado com Sucesso!';
+                copyBtn.classList.add('copied');
+                
+                // Retorna ao texto original após 2 segundos
+                setTimeout(() => {
+                    copyBtn.innerText = 'Copiar Modelo';
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Falha ao copiar texto: ', err);
+            });
+        });
+    </script>
+
+</body>
+</html>
